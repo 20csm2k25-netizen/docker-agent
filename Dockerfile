@@ -74,7 +74,7 @@ COPY --from=builder-cross /binaries .
 
 # Sandbox template for docker/sandboxes, pushed as
 # docker/docker-agent-sbx-templates: layers the binary built above onto the
-# sandboxes shell-docker base.
+
 FROM docker/sandbox-templates:shell-docker AS template
 ARG TARGETOS TARGETARCH
 USER root
